@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS && TrackJS.install({ 
+      token: "80581cf62d564b7b81c62fc2eaeb6e63"
+      // for more configuration options, see https://docs.trackjs.com
+    });
+  </script>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -186,14 +192,6 @@
     });
 
     window.onerror = function(){console.log('global error handler');};
-  </script>
-
-  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
-  <script>
-    window.TrackJS && TrackJS.install({ 
-      token: "80581cf62d564b7b81c62fc2eaeb6e63"
-      // for more configuration options, see https://docs.trackjs.com
-    });
   </script>
 </body>
 
